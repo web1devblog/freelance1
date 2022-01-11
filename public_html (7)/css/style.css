@@ -1,0 +1,1606 @@
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+:focus,
+:active {
+   outline: none;
+}
+a:focus,
+a:active {
+   outline: none;
+}
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   overflow-x: hidden;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+button,
+textarea {
+   font-family: inherit;
+}
+
+button {
+   cursor: pointer;
+}
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+ul li {
+   list-style: none;
+}
+img {
+   vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: inherit;
+}
+a {
+   color: #000;
+}
+:root {
+   --swiper-theme-color: rgb(109, 105, 96) !important;
+}
+@font-face {
+   font-family: "CenturyGothic";
+   src: local("CenturyGothic"), url(../fonts/centurygothic.ttf);
+}
+@font-face {
+   font-family: "CenturyGothicBold";
+   src: local("CenturyGothicBold"), url(../fonts/centurygothic_bold.ttf);
+}
+
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+   padding: 0 10px;
+   position: relative;
+}
+.nav {
+   padding-top: 35px;
+}
+.navbar-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.nav-item {
+   padding-left: 30px;
+   text-transform: uppercase;
+   font-family: "CenturyGothicBold";
+}
+.collapse {
+   display: flex;
+   justify-content: space-between;
+}
+.header-main {
+   background-color: rgba(238, 225, 209);
+}
+
+.image-slider {
+   box-sizing: border-box;
+   width: 100%;
+   overflow: hidden;
+   margin-top: 40px;
+}
+.slider__flex {
+   display: flex;
+   justify-content: space-between;
+}
+.header__img {
+   margin-top: 25px;
+   width: 100%;
+   margin-bottom: 25px;
+}
+.slider__img {
+   padding-right: 120px;
+}
+.image-slider__image {
+   text-align: center;
+}
+.image-slider__image img {
+   max-width: 100%;
+}
+.slider__info svg {
+   border: 1px solid #646160;
+   color: #646160;
+}
+.arrowRight {
+   max-width: 25px;
+   margin-left: 8px;
+}
+.slider__info {
+   padding-top: 60px;
+   text-transform: uppercase;
+   font-family: "CenturyGothicBold";
+   color: #646160;
+   font-size: 10px;
+   letter-spacing: 2px;
+   display: flex;
+   align-items: center;
+}
+.slider__text {
+   display: flex;
+   flex-direction: column;
+   margin-top: 40px;
+   padding-right: 180px;
+}
+.slider__text p {
+   font-size: 23px;
+   font-family: "CenturyGothicBold";
+   line-height: 34px;
+   text-transform: uppercase;
+}
+.slider__btns {
+   display: none;
+}
+.swiper-pagination {
+   position: absolute;
+   top: 440px;
+   left: -540px !important;
+   z-index: 0 !important;
+   height: 40px;
+}
+main {
+   margin-top: 70px;
+}
+.nav__catalog {
+   display: flex;
+}
+.nav__block {
+   background-color: #777676;
+}
+.catalog {
+   padding: 70px 0 0 0;
+}
+.title__search {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 50px;
+   position: relative;
+}
+.catalog__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+}
+.search {
+   position: relative;
+   width: 80%;
+}
+.search__catalog {
+   width: 100%;
+   border: 1px solid #67635e45;
+   display: block;
+   padding: 15px 0 15px 55px;
+   font-family: "CenturyGothic";
+   font-size: 12px;
+}
+.search:after {
+   position: absolute;
+   content: url(../img/search-icon.png);
+   width: 20px;
+   height: 20px;
+   top: 2px;
+   left: 2.5px;
+   cursor: text;
+}
+.search__catalog::placeholder {
+   font-family: "CenturyGothic";
+   font-size: 12px;
+   color: #67635e72;
+}
+.catalog__blocks {
+   display: flex;
+   align-items: top;
+}
+.more__btn-img {
+   width: 25px;
+   height: 25px;
+   opacity: 0.2;
+}
+.block {
+   position: relative;
+   z-index: 2;
+   display: block;
+   background-color: #f5f6f6;
+   width: 25%;
+   height: 190px;
+   margin-bottom: 0;
+   border-left: 1px solid #67635e45;
+   padding-top: 25px;
+   transition: 0.5s;
+}
+.block:hover::before {
+   cursor: pointer;
+   background-color: #fdf3cc;
+}
+.more__btn-img {
+   transition: 0.3s;
+}
+.block:hover .more__btn-img {
+   transform: rotate(90deg);
+   opacity: 1;
+}
+.block__title {
+   margin-left: 33px;
+   font-family: "CenturyGothicBold";
+   font-size: 14px;
+   margin-bottom: 105px;
+   text-transform: uppercase;
+}
+.more__btn {
+   margin-left: 30px;
+}
+#block1::after {
+   position: absolute;
+   content: url(../img/block-img1-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 8px;
+   right: -2px;
+   cursor: pointer;
+}
+#block2::after {
+   position: absolute;
+   content: url(../img/block-img2-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 6px;
+   right: -20px;
+   cursor: pointer;
+}
+#block3::after {
+   position: absolute;
+   content: url(../img/block-img3-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 22px;
+   right: -10px;
+   cursor: pointer;
+}
+#block4::after {
+   position: absolute;
+   content: url(../img/block-img4-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: -22px;
+   right: 5px;
+   cursor: pointer;
+}
+#block5::after {
+   position: absolute;
+   content: url(../img/block-img5-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 35px;
+   right: 0px;
+   cursor: pointer;
+}
+#block6::after {
+   position: absolute;
+   content: url(../img/block-img6-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 40px;
+   right: -30px;
+   cursor: pointer;
+}
+#block7::after {
+   position: absolute;
+   content: url(../img/block-img7-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 38px;
+   right: 5px;
+   cursor: pointer;
+}
+#block8::after {
+   position: absolute;
+   content: url(../img/block-img8-removebg-preview.png);
+   width: 138px;
+   height: 82px;
+   bottom: 45px;
+   right: 8px;
+   cursor: pointer;
+}
+.block::before {
+   position: absolute;
+   content: "";
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   background-color: #f5f6f6;
+   top: 0;
+   left: 0;
+   transition: 0.3s;
+}
+.more__inf {
+   position: absolute;
+   z-index: -2;
+   width: 100%;
+   height: 99%;
+   bottom: -120%;
+   background-color: #fdf3cc;
+   transition: 0.3s;
+   transform: translateY(-126%);
+   opacity: 0;
+   overflow: hidden;
+   border-radius: 4px;
+   border: 1px solid #f3f2f1;
+   text-transform: uppercase;
+}
+.block:hover .more__inf {
+   opacity: 1;
+   transform: translateY(0);
+   height: calc(125% - 7px);
+}
+.catalog__blocks {
+   margin-bottom: 30px;
+   transition: 0.3s;
+}
+.catalog__blocks:hover {
+   margin-bottom: 310px;
+}
+.readySolution__blocks {
+   margin-bottom: 90px;
+   transition: 0.3s;
+}
+.readySolution__blocks:hover {
+   margin-bottom: 310px;
+}
+.blockInf__title {
+   font-family: "CenturyGothicBold";
+   font-size: 12px;
+   margin-bottom: 20px;
+   border-bottom: 1px solid black;
+   width: 77%;
+   margin-left: 25px;
+   margin-top: 25px;
+}
+.blockInf__text {
+   font-family: "CenturyGothic";
+   font-size: 12px;
+   margin-left: 25px;
+   display: block;
+}
+.blockInf__text + .blockInf__text {
+   margin-top: 20px;
+}
+.title__more {
+   display: flex;
+   align-items: center;
+   margin-bottom: 45px;
+}
+.manufactures {
+   padding-bottom: 95px;
+}
+.manufacturers__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-right: 55px;
+}
+.manufacturers-more__btn {
+   color: #6aa3d3;
+   font-family: "CenturyGothicBold";
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+}
+.manufact-more__img {
+   width: 25px;
+   height: 25px;
+   transition: 0.3s;
+   margin-left: 5px;
+   text-transform: uppercase;
+   opacity: 0.8;
+}
+.manufacturers-more__btn:hover .manufact-more__img {
+   margin-left: 15px;
+   opacity: 1;
+}
+.manufactures__blocks {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.manufacture__link {
+   opacity: 0.7;
+   transition: 0.3s;
+}
+.manufacture__link:hover {
+   opacity: 1;
+}
+.readySolution-titleBlock {
+   display: flex;
+   align-items: center;
+   margin-bottom: 10px;
+}
+.readySolution__img {
+   position: relative;
+   width: 745px;
+   height: 295px;
+}
+.readySolution__img::after {
+   position: absolute;
+   content: url(../img/readySolution-img.png);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+}
+.readySolution__subtitle {
+   font-family: "CenturyGothicBold";
+   font-size: 32px;
+}
+.readySolution__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-bottom: 10px;
+   margin-bottom: 65px;
+}
+.readySolution__blocks {
+   display: flex;
+   align-items: top;
+}
+.moreUse {
+   padding-bottom: 150px;
+}
+.moreUse__wrap {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.moreUse__img {
+   position: relative;
+   width: 745px;
+   height: 290px;
+}
+.moreUse__img::after {
+   position: absolute;
+   content: url(../img/moreUse-img.png);
+   width: 100%;
+   height: 100%;
+   top: 0;
+   right: 70%;
+}
+.moreUse__title {
+   font-family: "CenturyGothicBold";
+   font-size: 32px;
+   margin-left: 120px;
+}
+.aboutProject {
+   padding-bottom: 105px;
+}
+.aboutProject__wrap {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.aboutProject__descr {
+   width: 47%;
+   height: 100%;
+   margin-bottom: 105px;
+}
+.aboutProject__img {
+   position: relative;
+   width: 47%;
+   height: 190px;
+}
+.aboutProject__img:after {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   content: url(../img/aboutProject-img.png);
+   top: -50px;
+   z-index: -3;
+}
+.descr__title {
+   font-family: "CenturyGothicBold";
+   font-size: 36px;
+   margin-bottom: 45px;
+}
+.descr__text {
+   font-family: "CenturyGothicBold";
+   font-size: 21px;
+   line-height: 25px;
+}
+.aboutProject__blocks {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.aboutProject__block {
+   width: 23%;
+   height: 185px;
+   background-color: #f4f6f6;
+   padding: 35px;
+}
+.block__img {
+   margin-bottom: 15px;
+}
+.block__text {
+   font-family: "CenturyGothic";
+   font-size: 12px;
+}
+.news {
+   padding-bottom: 55px;
+}
+.newsSec__title-box {
+   display: flex;
+   align-items: center;
+   margin-bottom: 45px;
+}
+.newsSec__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-right: 5px;
+}
+.newsSec__subtitle {
+   font-family: "CenturyGothic";
+   font-size: 32px;
+   margin-right: 20%;
+   color: #959595;
+}
+.newsSec__btn {
+   color: #fff;
+   display: flex;
+   align-items: center;
+   padding: 5px 22px;
+   text-align: center;
+   background-color: #6aa3d3;
+}
+.btn__arrow {
+   width: 25px;
+   height: 25px;
+   margin-left: 7px;
+}
+.news__blocks {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.new__block {
+   display: block;
+   cursor: pointer;
+   width: 25%;
+   height: 345px;
+   border: 1px solid #cccccc;
+}
+.new-img {
+   width: 100%;
+}
+.new__descr {
+   margin-left: 10px;
+   margin-right: 10px;
+   margin-top: 15px;
+   font-family: "CenturyGothic";
+   font-size: 14px;
+   margin-bottom: 15px;
+}
+.new__ist {
+   margin-left: 10px;
+   margin-bottom: 20px;
+   color: rgb(181, 181, 181);
+}
+.new__more {
+   display: block;
+   color: #fff;
+   background-color: #4577b1;
+   padding: 5px 5px;
+   font-family: "CenturyGothic";
+   font-size: 14px;
+   width: 33%;
+   margin-left: 10px;
+   border-radius: 4px;
+}
+.footer {
+   border-top: 2px solid black;
+   padding: 48px 0 0 0;
+}
+.line1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 70px;
+}
+.emailSub {
+   height: 35px;
+   width: 450px;
+   display: flex;
+   align-items: center;
+}
+.emailSub input {
+   height: 100%;
+   width: 50%;
+   border: 1px solid rgb(130, 130, 130);
+   padding: 10px 25px;
+}
+.emailSub button {
+   height: 100%;
+   color: #fff;
+   text-align: center;
+   padding: 10px 65px;
+   background-color: #688dc3;
+}
+.footerSearch {
+   border-bottom: 1px solid #000;
+   padding-left: 25px;
+   padding-bottom: 5px;
+}
+.footerSearch::placeholder {
+   color: rgb(88, 88, 88);
+}
+.line2 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.col1,
+.col2,
+.col3,
+.col4 {
+   width: 20%;
+}
+.forObr__cardsMob {
+   display: none;
+}
+.footer__link {
+   display: block;
+   margin-bottom: 20px;
+}
+.furnitureBack {
+   display: flex;
+   align-items: center;
+   transition: 0.3s;
+   opacity: 0.7;
+   margin-bottom: 40px;
+}
+.furnitureBack:hover {
+   opacity: 1;
+}
+.furnitureBack__text {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-left: 15px;
+   border-bottom: 2px solid black;
+}
+
+.backArrow {
+   width: 50px;
+   height: 50px;
+   transform: rotate(180deg);
+}
+.manufactures__blocks {
+   margin-bottom: 60px;
+}
+.lines {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 70px;
+}
+.manufactires__slider {
+   display: none;
+}
+.manufactures .slick-slider {
+   display: none;
+}
+.furn1col {
+   width: 15%;
+}
+.navTitle {
+   font-family: "CenturyGothicBold";
+   font-size: 18px;
+   margin-left: 10px;
+   margin-top: 25px;
+}
+.funcNav__item {
+   margin-top: 10px;
+   display: block;
+   padding: 5px 20px;
+   border-radius: 20px;
+   transition: 0.3s;
+   font-size: 12px;
+}
+.furn2col {
+   width: 80%;
+}
+.funcNav__item:hover {
+   background-color: #b51c37;
+   color: #fff;
+}
+.menu {
+   display: none;
+}
+.col2line {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 25px;
+}
+.cardLink {
+   width: 32%;
+   height: 275px;
+   text-transform: uppercase;
+}
+#cardLink1 {
+   background-image: url(../img/cardLink-img1.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 24px;
+   padding-left: 25px;
+}
+#cardLink1 .card__title {
+   margin-top: 85%;
+}
+#cardLink2 {
+   background-image: url(../img/cardLink-img2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   color: #000;
+   font-family: "CenturyGothicBold";
+   font-size: 24px;
+   padding-left: 25px;
+}
+#cardLink2 .card__title {
+   margin-top: 85%;
+}
+#cardLink3 {
+   background-image: url(../img/cardLink-img3.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   color: #000;
+   font-family: "CenturyGothicBold";
+   font-size: 24px;
+   padding-left: 25px;
+}
+#cardLink3 .card__title {
+   margin-top: 85%;
+}
+.col2line4 {
+   height: 275px;
+   width: 100%;
+}
+.LabCardsMob {
+   display: none;
+}
+.cardLinkMain {
+   height: 100%;
+   display: block;
+   width: 100%;
+   background-size: cover;
+   background-image: url(../img/cardLink-img4.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   padding-left: 25px;
+}
+#cardLink4 .card__title {
+   font-family: "CenturyGothicBold";
+   font-size: 24px;
+   color: #fff;
+   padding-top: 220px;
+   text-transform: uppercase;
+   /* margin-top: 80%; */
+}
+.Lab {
+   margin-bottom: 70px;
+}
+.Lab__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-bottom: 75px;
+}
+.LabCards {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   font-family: "CenturyGothicBold";
+   font-size: 12px;
+}
+.labCard__title {
+   margin-top: 25px;
+}
+.forObr__title {
+   font-family: "CenturyGothicBold";
+   font-size: 40px;
+   margin-bottom: 75px;
+}
+.cardsLine1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.forObr__card {
+   width: 32%;
+   height: 300px;
+   display: block;
+}
+#forObrCard1 {
+   background-image: url(../img/forObr-card-img1.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#forObrCard1 .card__text {
+   padding: 10px;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 30px;
+   border-radius: 20px;
+   width: 45%;
+   background-color: #7da6df;
+   margin-top: 60%;
+   margin-left: 20px;
+}
+#forObrCard2 {
+   background-image: url(../img/forObr-card-img2.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#forObrCard2 .card__text {
+   padding: 10px;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 30px;
+   border-radius: 20px;
+   width: 60%;
+   background-color: #7ac5c0;
+   margin-top: 60%;
+   margin-left: 20px;
+}
+#forObrCard3 {
+   background-image: url(../img/forObr-card-img3.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#forObrCard3 .card__text {
+   padding: 10px;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 30px;
+   border-radius: 20px;
+   width: 60%;
+   background-color: #da092e;
+   margin-top: 60%;
+   margin-left: 20px;
+}
+.cardsLine4 {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 65px;
+}
+#forObrCard4 {
+   width: 32%;
+   background-image: url(../img/forObr-card-img4.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#forObrCard4 .card__text {
+   padding: 10px;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 30px;
+   border-radius: 20px;
+   width: 60%;
+   background-color: #d9ce92;
+   margin-top: 60%;
+   margin-left: 20px;
+}
+#forObrCard5 {
+   width: 66%;
+   background-image: url(../img/forObr-card-img5.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#forObrCard5 .card__text {
+   padding: 10px;
+   color: #fff;
+   font-family: "CenturyGothicBold";
+   font-size: 30px;
+   border-radius: 20px;
+   width: 60%;
+   background-color: #bcd992;
+   margin-top: 30%;
+   margin-left: 20px;
+}
+.catalog2Line1 {
+   display: flex;
+   justify-content: space-between;
+   border-bottom: 1px solid rgba(78, 77, 77, 0.408);
+}
+.Catalog2Line1Col1 {
+   width: 32%;
+}
+
+.Catalog2Line1Col2 {
+   width: 68%;
+}
+.col2line1 {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid rgba(78, 77, 77, 0.408);
+}
+.catalog2Block {
+   height: 275px;
+   border-right: 1px solid rgba(78, 77, 77, 0.408);
+   padding: 10px 35px 70px;
+   border-left: 1px solid rgba(78, 77, 77, 0.408);
+}
+
+#verticalBlock {
+   width: 100%;
+   height: 470px;
+   padding: 0;
+   border: none;
+   padding-right: 25px;
+}
+#verticalBlock .catalog2Block__img {
+   width: 100%;
+}
+.catalog2Block__img {
+   margin: 0 auto;
+   display: block;
+   margin-bottom: 15px;
+}
+.col2line2 .catalog2Block__img {
+   width: 88%;
+}
+.col2line2 .catalog2Block:first-child {
+   padding-right: 27px;
+}
+.mobSection {
+   display: none;
+}
+.col2line2 {
+   display: flex;
+   align-items: center;
+}
+.col2line2 .catalog2Block {
+   border-bottom: none;
+}
+.catalog2Line2 {
+   border-bottom: rgba(78, 77, 77, 0.408) 1px solid;
+}
+.catalog2Line2,
+.catalog2Line3 {
+   display: flex;
+   align-items: center;
+}
+.linesMob {
+   display: none;
+}
+.aboutProject__blocksMob {
+   display: none;
+}
+.aboutBtn {
+   display: none;
+}
+@media screen and (max-width: 965px) {
+   .header-main {
+      padding-bottom: 120px;
+   }
+   .image-slider {
+      overflow: visible;
+      width: 102%;
+   }
+   .navbar-nav {
+      display: none;
+   }
+   .block {
+      width: 230px;
+   }
+   .catalog__blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 0;
+   }
+   .block:last-child {
+      margin-bottom: 0;
+   }
+   .catalog__title,
+   .manufacturers__title {
+      font-size: 30px;
+      margin-bottom: 20px;
+   }
+   .manufacturers__title {
+      margin-right: 0;
+   }
+   .title__search,
+   .title__more {
+      flex-direction: column;
+      justify-content: center;
+   }
+   .manufactures__blocks,
+   .readySolution__blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .aboutProject__descr {
+      margin-bottom: 50px;
+   }
+   .manufactures__blocks {
+      display: none;
+   }
+   .manufacture__link {
+      margin-top: 20px;
+   }
+   .manufactures {
+      margin-bottom: 30px;
+      padding-bottom: 0;
+   }
+   .manufacture__img {
+      margin: 0 auto;
+      display: block;
+   }
+   .slider__btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   .Prev {
+      margin-right: 15px;
+   }
+   .Prev,
+   .Next {
+      margin-top: 20px;
+      opacity: 0.15;
+   }
+   .search {
+      width: 70%;
+   }
+   .catalog__title {
+      display: block;
+      width: 70%;
+   }
+   .swiper-pagination {
+      left: -42% !important;
+   }
+   .readySolution__img::after {
+      top: -100px;
+      left: -100px;
+      z-index: -2;
+   }
+   .readySolution-titleBlock {
+      display: block;
+      height: 350px;
+   }
+   .readySolution__subtitle {
+      font-size: 30px;
+      text-transform: uppercase;
+      padding-top: 25px;
+   }
+   .readySolution__img {
+      width: 50%;
+   }
+   .slider__flex {
+      position: relative;
+   }
+   .slider__img {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      height: 100%;
+      width: 60%;
+      z-index: -2;
+   }
+   .slider__text,
+   .slider__img {
+      padding-right: 0;
+   }
+   .readySolution__title {
+      font-size: 25px;
+   }
+   .moreUse__img::after {
+      z-index: -2;
+      right: 50px;
+   }
+   .moreUse__title {
+      text-align: right;
+      text-transform: uppercase;
+      margin-top: 100px;
+      font-size: 30px;
+   }
+   .aboutProject__img {
+      display: none;
+   }
+   .aboutProject__descr {
+      width: 100%;
+   }
+   .aboutProject__blocks {
+      display: none;
+   }
+   .aboutProject__blocksMob {
+      display: flex;
+      justify-content: center;
+   }
+   .col1About {
+      margin-top: 100px;
+   }
+   .aboutBtn {
+      display: block;
+      margin-bottom: 45px;
+      margin-left: 25px;
+      font-family: "CenturyGothicBold";
+   }
+   .newsSec__title,
+   .newsSec__subtitle {
+      display: block;
+      width: 85%;
+   }
+   .newsSec__btn {
+      display: none;
+   }
+   .descr__title {
+      font-size: 25px;
+   }
+   .descr__text {
+      font-size: 15px;
+   }
+   .forObr__card {
+      width: 48%;
+      height: 150px !important;
+   }
+   .aboutProject__img::after {
+      left: -200px;
+   }
+   .footer .logo {
+      display: none;
+   }
+   .footerSearch {
+      display: none;
+   }
+   .aboutProject__blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .aboutProject__block {
+      width: 200px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+   }
+   .moreUse__title {
+      margin-left: 0;
+      font-size: 25px;
+   }
+   .moreUse__img {
+      width: auto;
+   }
+   .newsSec__title {
+      font-size: 24px;
+      margin-right: 0;
+      margin-bottom: 5px;
+   }
+   .newsSec__subtitle {
+      font-size: 20px;
+      margin-right: 0;
+      margin-bottom: 15px;
+   }
+   .newsSec__title-box {
+      flex-direction: column;
+   }
+   .news__blocks {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .new__block {
+      width: 200px;
+      margin-bottom: 15px;
+      margin-right: 10px;
+   }
+   .line1,
+   .line2 {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .logo {
+      margin-right: 10px;
+      margin-bottom: 10px;
+   }
+   .footerSearch {
+      margin-left: 10px;
+      margin-top: 10px;
+   }
+   .col1,
+   .col2,
+   .col3,
+   .col4 {
+      width: 150px;
+   }
+   .emailSub {
+      width: 80%;
+   }
+   .emailSub button {
+      width: 50%;
+      padding: 0;
+   }
+   .furnitureBack__text {
+      font-size: 25px;
+   }
+   .backArrow {
+      width: 25px;
+      height: 25px;
+   }
+   .manufactures .slick-slider,
+   .slider__btns {
+      display: flex;
+   }
+   .furn1col {
+      display: none;
+   }
+   .furn2col {
+      width: 100%;
+   }
+   .lines {
+      display: none;
+   }
+   .linesMob {
+      display: block;
+   }
+   .cardLink {
+      width: 400px;
+   }
+   .catalog__blocks:hover {
+      margin-bottom: 150px;
+   }
+   .catalog__blocks {
+      margin-bottom: 150px;
+   }
+   .block {
+      z-index: auto;
+   }
+   .more__inf {
+      z-index: 1000;
+   }
+   .line2 {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: start;
+      align-items: flex-start;
+      width: 80%;
+      margin: 0 auto;
+   }
+   .footer__linkLast {
+      font-family: "CenturyGothicBold";
+   }
+   .col1,
+   .col4 {
+      width: auto;
+   }
+   .col2,
+   .col3 {
+      display: none;
+   }
+   .col2line4 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 350px;
+   }
+   .col2line {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   #cardLink4 {
+      background-image: url(../img/cardLink-img4.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      color: #000 !important;
+   }
+   #cardLink3 {
+      background-image: url(../img/cardLink-img3.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   #cardLink2 {
+      background-image: url(../img/cardLink-img2.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   #cardLink1 {
+      background-image: url(../img/cardLink-img1.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+   }
+   #cardLink4 .card__title {
+      padding-top: 120px;
+      margin-left: 20px;
+   }
+   .Lab__title {
+      text-transform: uppercase;
+      font-size: 25px;
+      margin-top: 25px;
+   }
+   .LabCardsMob {
+      display: block;
+      text-align: center;
+   }
+   .LabCard__img {
+      margin: 0 auto;
+   }
+   .LabCards {
+      display: none;
+   }
+   .forObr__title {
+      font-size: 25px;
+   }
+   .cardsLine1,
+   .cardsLine4 {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   #cardLink4 .card__title {
+      color: #000;
+   }
+   .card__title {
+      font-size: 16px;
+   }
+   .linesMob-col1,
+   .linesMob-col2 {
+      display: flex;
+      justify-content: space-between;
+   }
+   .cardLink {
+      width: 47%;
+      height: 150px;
+      margin-bottom: 25px;
+   }
+
+   .forObr__title {
+      text-transform: uppercase;
+      font-size: 25px;
+   }
+   .forObr__cards {
+      display: none;
+   }
+   .forObr__cardsMob {
+      display: block;
+   }
+
+   .mobSection {
+      display: block;
+   }
+   .manufactires__slider {
+      display: block;
+   }
+   .catalog2Block {
+      width: 300px;
+      height: 400px;
+      border: 1px solid rgba(78, 77, 77, 0.408);
+   }
+   .catalog2blocks {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+   .body {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+   }
+   .menu {
+      background-color: #4577b1;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      padding: 0;
+   }
+   .line {
+      fill: none;
+      stroke: white;
+      stroke-width: 6;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+   .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+   }
+   .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+   }
+   .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+   }
+   .opened .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+   }
+   .opened .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+   }
+   .opened .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+   }
+   .forObr__title {
+      margin-bottom: 0;
+   }
+   .forObrMob-line1 {
+      margin-bottom: 10px;
+      margin-top: 25px;
+   }
+   .forObrMob-line1,
+   .forObrMob-line2,
+   .forObrMob-line3 {
+      display: flex;
+      justify-content: space-between;
+   }
+   .forObrMob-line3 {
+      margin-top: 10px;
+   }
+   .filtersBtn {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: #b51c37;
+      color: #fff;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      text-align: center;
+   }
+   #forObrCard5 {
+      width: 100%;
+      margin-bottom: 50px;
+   }
+   #forObrCard4,
+   #forObrCard3 {
+      width: 48%;
+   }
+   .card__text {
+      font-size: 12px !important;
+   }
+   .forObrCard1 {
+      width: 47%;
+   }
+   .catalog2blocks {
+      display: block;
+   }
+   .blocksLine {
+      display: flex;
+      justify-content: center;
+   }
+   .catalog2Block {
+      width: 150px;
+      height: 240px;
+      padding: 5px;
+   }
+   .catalog2Block img {
+      width: 95%;
+   }
+   .catalog2Block__title {
+      font-size: 10px;
+      font-family: "CenturyGothicBold";
+      margin-bottom: 10px;
+   }
+   .mobSection {
+      margin-bottom: 50px;
+   }
+}
+@media screen and (max-width: 630px) {
+   .slider__img {
+      width: 90%;
+   }
+}
+@media screen and (max-width: 500px) {
+   .block {
+      width: 140px;
+      height: 120px;
+      padding-top: 5px;
+   }
+   .aboutProject__block {
+       height: 165px;
+       padding: 10px;
+       width: 151px;
+   }
+   .block::after {
+      transform: scale(0.5);
+   }
+   #block1::after {
+      bottom: -16px;
+      right: -35px;
+   }
+   #block2::after {
+      bottom: -16px;
+      right: -44px;
+   }
+   #block3::after {
+      bottom: -10px;
+      right: -40px;
+   }
+   #block4::after {
+      bottom: -31px;
+      right: -33px;
+   }
+   .block__title {
+      margin-bottom: 60px;
+   }
+   .blockInf__title {
+      font-size: 8px;
+      margin: 5px 5px 10px 5px;
+   }
+   .blockInf__text {
+      font-size: 8px;
+      margin-top: 5px;
+      margin-left: 5px;
+   }
+   .blockInf__text + .blockInf__text {
+      margin-top: 5px;
+   }
+   .block__title {
+      font-size: 10px;
+      margin-right: 2px;
+      margin-top: 2px;
+   }
+   .catalog__blocks {
+      width: 100%;
+   }
+   .readySolution__img::after {
+      top: -143px;
+   }
+   .slider__img {
+      bottom: -73px;
+   }
+   .slider__img img {
+      width: 320px;
+   }
+}

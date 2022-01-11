@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+      <title>ED-EXPO</title>
+   </head>
+   <body>
+      <header class="header-main">
+         <div class="container">
+            <div class="nav header-nav">
+               <div class="collapse navbar-collapse" id="navbarNav-top">
+                  <a href="#" class="logo">
+                     <img src="img/logo.png" alt="" />
+                  </a>
+                  <button
+                     class="menu"
+                     onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                     aria-label="Main Menu"
+                  >
+                     <svg width="50" height="50" viewBox="0 0 100 100">
+                        <path
+                           class="line line1"
+                           d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                        />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path
+                           class="line line3"
+                           d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                        />
+                     </svg>
+                  </button>
+                  <ul class="navbar-nav">
+                     <li class="nav-item">
+                        <a class="nav-link active" href="#">Каталог</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Все производители</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Готовые решения</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Выставка</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">Личный кабинет</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#">О проекте</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="image-slider swiper-container">
+               <div class="image-slider__wrapper swiper-wrapper">
+                  <div class="image-slider__slide swiper-slide">
+                     <div class="slider__flex">
+                        <div class="slider__text">
+                           <p>
+                              Современные <br />
+                              образовательные <br />
+                              решения от росссийских <br />
+                              производителей
+                           </p>
+                           <a href="#" class="slider__info"
+                              >Подробнее
+
+                              <img src="img/arrowrigth.png" class="arrowRight" alt="" />
+                           </a>
+                        </div>
+                        <div class="slider__img">
+                           <img src="img/model.png" alt="" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="image-slider__slide swiper-slide">
+                     <div class="slider__flex">
+                        <div class="slider__text">
+                           <p>
+                              Современные <br />
+                              образовательные <br />
+                              решения от росссийских <br />
+                              производителей
+                           </p>
+                           <a href="#" class="slider__info"
+                              >Подробнее
+
+                              <img src="img/arrowrigth.png" class="arrowRight" alt="" />
+                           </a>
+                        </div>
+                        <div class="slider__img">
+                           <img src="img/model.png" alt="" />
+                        </div>
+                     </div>
+                  </div>
+                  <div class="image-slider__slide swiper-slide">
+                     <div class="slider__flex">
+                        <div class="slider__text">
+                           <p>
+                              Современные <br />
+                              образовательные <br />
+                              решения от росссийских <br />
+                              производителей
+                           </p>
+                           <a href="#" class="slider__info"
+                              >Подробнее
+
+                              <img src="img/arrowrigth.png" class="arrowRight" alt="" />
+                           </a>
+                        </div>
+                        <div class="slider__img">
+                           <img src="img/model.png" alt="" />
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+      </header>
+      <section class="catalog">
+         <div class="container">
+            <div class="title__search">
+               <h1 class="catalog__title">Каталог</h1>
+               <form action="#" class="search">
+                  <input type="text" class="search__catalog" placeholder="Например, спектрометр для школы" />
+               </form>
+            </div>
+            <div class="catalog__blocks">
+               <div class="block" id="block1">
+                  <p class="block__title">Для детских садов</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block1inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block2">
+                  <p class="block__title">Для школ</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block2inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block3">
+                  <p class="block__title">Для вузов</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block3inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block4">
+                  <p class="block__title">доп.образование</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block4inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="manufactures">
+         <div class="container">
+            <div class="title__more">
+               <h3 class="manufacturers__title">Производители</h3>
+               <a href="#" class="manufacturers-more__btn">
+                  смотреть всех
+                  <img src="img/arrow-right.png" alt="" class="manufact-more__img" />
+               </a>
+            </div>
+            <div class="manufactures__blocks">
+               <a href="#" class="manufacture__link">
+                  <img src="img/manufacture-img1-removebg-preview.png" alt="" class="manufacture__img" />
+               </a>
+               <a href="#" class="manufacture__link">
+                  <img src="img/manufacture-img2-removebg-preview.png" alt="" class="manufacture__img" />
+               </a>
+               <a href="#" class="manufacture__link">
+                  <img src="img/manufacture-img3-removebg-preview.png" alt="" class="manufacture__img" />
+               </a>
+               <a href="#" class="manufacture__link">
+                  <img src="img/manufacture-img4-removebg-preview.png" alt="" class="manufacture__img" />
+               </a>
+            </div>
+            <div class="manufactires__slider">
+               <div class="manufacture__slide">
+                  <a href="#" class="manufacture__link">
+                     <img src="img/manufacture-img4-removebg-preview.png" alt="" class="manufacture__img" />
+                  </a>
+               </div>
+               <div class="manufacture__slide">
+                  <a href="#" class="manufacture__link">
+                     <img src="img/manufacture-img3-removebg-preview.png" alt="" class="manufacture__img" />
+                  </a>
+               </div>
+               <div class="manufacture__slide">
+                  <a href="#" class="manufacture__link">
+                     <img src="img/manufacture-img2-removebg-preview.png" alt="" class="manufacture__img" />
+                  </a>
+               </div>
+               <div class="manufacture__slide">
+                  <a href="#" class="manufacture__link">
+                     <img src="img/manufacture-img1-removebg-preview.png" alt="" class="manufacture__img" />
+                  </a>
+               </div>
+            </div>
+            <div class="slider__btns">
+               <button class="Prev" style="background-color: transparent; width: 30px; height: 30px">
+                  <img src="img/slider-button-img.png" alt="" class="button-img" style="width: 30px; height: 30px; transform: rotate(180deg)" />
+               </button>
+               <button class="Next" style="background-color: transparent; width: 30px; height: 30px">
+                  <img src="img/slider-button-img.png" alt="" style="width: 30px; height: 30px" class="button-img" />
+               </button>
+            </div>
+         </div>
+      </section>
+      <section class="readySolution">
+         <div class="container">
+            <div class="readySolution-titleBlock">
+               <h3 class="readySolution__subtitle">готовые решения для класса дополнительного образования</h3>
+               <span class="readySolution__img"></span>
+            </div>
+            <h2 class="readySolution__title">Готовые решения</h2>
+            <div class="readySolution__blocks">
+               <div class="block" id="block5">
+                  <p class="block__title">мебель</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block1inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block6">
+                  <p class="block__title">УЧЕБНОЕ ОБОРУДОВАНИЕ</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block2inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block7">
+                  <p class="block__title">ЦИФРОВЫЕ УСТРОЙСТВА И ПО</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block3inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+               <div class="block" id="block8">
+                  <p class="block__title">РАЗВИВАЮЩИЕ ИГРЫ И ИГРУШКИ</p>
+                  <a id="block4btn" href="#" class="more__btn">
+                     <img src="img/more-btn-img.png" alt="" class="more__btn-img" />
+                  </a>
+                  <div id="block4inf" class="more__inf">
+                     <p class="blockInf__title">Интерактивное оборудование</p>
+                     <a href="#" class="blockInf__text">Цифровые устройства</a>
+                     <a href="#" class="blockInf__text">Конструктор</a>
+                     <a href="#" class="blockInf__text">Цифровые лаборатории</a>
+                     <a href="#" class="blockInf__text">Развивающие игры и игрушки</a>
+                     <a href="#" class="blockInf__text">Мебель</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="moreUse">
+         <div class="container">
+            <div class="moreUse__wrap">
+               <span class="moreUse__img"></span>
+               <h2 class="moreUse__title">самые необходимые средства для профилактики заболеваемости</h2>
+            </div>
+         </div>
+      </section>
+      <section class="aboutProject">
+         <div class="container">
+            <div class="aboutProject__wrap">
+               <div class="aboutProject__descr">
+                  <h3 class="descr__title">О проекте</h3>
+                  <p class="descr__text">
+                     Задача проекта – представить отечественные компании и их разработки для дальнейшего внедрения в образовательные<br />организации
+                  </p>
+               </div>
+               <span class="aboutProject__img"></span>
+            </div>
+            <div class="aboutProject__blocks">
+               <div class="aboutProject__block">
+                  <img src="img/aboutProject-block-img1.png" alt="" class="block__img" />
+                  <p class="block__text">Квалифицированные консультации по подбору оборудования</p>
+               </div>
+               <div class="aboutProject__block">
+                  <img src="img/aboutProject-block-img2.png" alt="" class="block__img" />
+                  <p class="block__text">Только проверенные поставщики образовательного оборудования</p>
+               </div>
+               <div class="aboutProject__block">
+                  <img src="img/aboutProject-block-img3.png" alt="" class="block__img" />
+                  <p class="block__text">Производители из разных регионов России - кратчайшие сроки поставок</p>
+               </div>
+               <div class="aboutProject__block">
+                  <img src="img/aboutProject-block-img4.png" alt="" class="block__img" />
+                  <p class="block__text">Оборудование для всех типов образовательных организаций</p>
+               </div>
+            </div>
+            <a href="#" class="aboutBtn">Подробнее</a>
+
+            <div class="aboutProject__blocksMob">
+               <div class="col1About">
+                  <div class="aboutProject__block">
+                     <img src="img/aboutProject-block-img1.png" alt="" class="block__img" />
+                     <p class="block__text">Квалифицированные консультации по подбору оборудования</p>
+                  </div>
+                  <div class="aboutProject__block">
+                     <img src="img/aboutProject-block-img2.png" alt="" class="block__img" />
+                     <p class="block__text">Только проверенные поставщики образовательного оборудования</p>
+                  </div>
+               </div>
+               <div class="col2About">
+                  <div class="aboutProject__block">
+                     <img src="img/aboutProject-block-img3.png" alt="" class="block__img" />
+                     <p class="block__text">Производители из разных регионов России - кратчайшие сроки поставок</p>
+                  </div>
+                  <div class="aboutProject__block">
+                     <img src="img/aboutProject-block-img4.png" alt="" class="block__img" />
+                     <p class="block__text">Оборудование для всех типов образовательных организаций</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="news">
+         <div class="container">
+            <div class="newsSec__title-box">
+               <h3 class="newsSec__title">Новости рынка.</h3>
+               <h3 class="newsSec__subtitle">Полезные ссылки</h3>
+               <a href="#" class="newsSec__btn">
+                  Больше информации
+                  <img src="img/btn-arrow.png" alt="" class="btn__arrow" />
+               </a>
+            </div>
+            <div class="news__blocks">
+               <div class="new__block">
+                  <img src="img/new-img1.png" alt="" class="new-img" />
+                  <p class="new__descr">
+                     Помимо развлекательных видео, YouTube содержит большое количество обучающего контента в. разнообразных формстсх ипо розным
+                     темотиком
+                  </p>
+                  <p class="new__ist">Источник: Regnum</p>
+                  <a href="#" class="new__more">Подробнее</a>
+               </div>
+               <div class="new__block">
+                  <img src="img/new-img2.png" alt="" class="new-img" />
+                  <p class="new__descr">
+                     Дистанционное обучение, неизбежное в ситуации карантина, не может зоменить школу; но должно быть эффективным её дополнением,
+                     инынешнее время
+                  </p>
+                  <p class="new__ist">Источник: РБС</p>
+                  <a href="#" class="new__more">Подробнее</a>
+               </div>
+               <div class="new__block">
+                  <img src="img/new-img3.png" alt="" class="new-img" />
+                  <p class="new__descr">
+                     23 марта 2020 года в крупнейшем онлайн-магазине компьютерных игр Steam состоялся релиз Half Life: Alyx— научно-фантастического,
+                     шутера от первого лица. Культовая
+                  </p>
+                  <p class="new__ist">Источник: МЕЛ</p>
+                  <a href="#" class="new__more">Подробнее</a>
+               </div>
+               <div class="new__block">
+                  <img src="img/new-img4.png" alt="" class="new-img" />
+                  <p class="new__descr">
+                     Если писатель из простого автора превращается в близкого человека — со своими интересами, радостями и горестями, — тои его.
+                     произведения воспринимаются по-
+                  </p>
+                  <p class="new__ist">Источник: РБС</p>
+                  <a href="#" class="new__more">Подробнее</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <div class="line1">
+               <a href="#" class="logo">
+                  <img src="img/logo.png" alt="" />
+               </a>
+               <form action="#" class="emailSub">
+                  <input type="text" placeholder="E-mail" />
+                  <button type="submit">Подписаться</button>
+               </form>
+               <input type="text" placeholder="Поиск по сайту" class="footerSearch" />
+            </div>
+            <div class="line2">
+               <div class="col1">
+                  <a href="#" class="footer__link">Виртуальная выставка 2021</a>
+                  <a href="#" class="footer__link">Пользовательское соглашение</a>
+                  <a href="#" class="footer__link">Cookies</a>
+               </div>
+               <div class="col2">
+                  <a href="#" class="footer__link">Все производители</a>
+                  <a href="#" class="footer__link">Готовые решения</a>
+                  <a href="#" class="footer__link">Новости</a>
+               </div>
+               <div class="col3">
+                  <a href="#" class="footer__link">О проекте</a>
+                  <a href="#" class="footer__link">Сотрудничество</a>
+                  <a href="#" class="footer__link">Контакты</a>
+               </div>
+               <div class="col4">
+                  <a href="#" class="footer__link footer__linkLast">Есть вопросы?</a>
+                  <a href="#" class="footer__link">Наш адрес:<br />info@navcenter.ru</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <footer class="site-footer"></footer>
+      <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+      <script src="js/swiper.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+      <script>
+         $(document).ready(function () {
+            $(".manufactires__slider").slick({
+               prevArrow: $(".Prev"),
+               nextArrow: $(".Next"),
+            });
+         });
+      </script>
+
+      <!-- <script>
+          let MoreInf1 = document.querySelector('#block1inf');
+
+          function OnMoreBtnClick1() {
+              MoreInf1.classList.add('activeInfBlock')
+              console.log('add')
+          }
+      </script> -->
+   </body>
+</html>
